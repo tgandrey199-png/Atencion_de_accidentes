@@ -1,76 +1,146 @@
 
-@import './global.css';
-
-.login {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #102a43, #087e8b);
-}
-
-.login__contenido {
-    background: white;
-    width: 100%;
-    max-width: 420px;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.login__contenido h1 {
-    color: #102a43;
-    text-align: center;
-}
-
-.login__contenido p {
-    color: #64748b;
-    text-align: center;
-}
-
-.login__icono {
-    text-align: center;
-    font-size: 55px;
-}
-
-.login label {
-    display: block;
-    margin-top: 18px;
-    font-weight: bold;
-}
-
-.login input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #cbd5e1;
-    border-radius: 7px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.boton {
-    width: 100%;
-    margin-top: 25px;
-    padding: 13px;
-    background: #087e8b;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.encabezado {
+    background-color: #153b66;
     color: white;
-    border: none;
-    border-radius: 7px;
-    font-weight: bold;
-    cursor: pointer;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.encabezado h1 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+.bienvenida {
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.bienvenida h2 {
+    color: #153b66;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.bienvenida p {
+    color: #555;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #d62828;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 6px;
 }
 
 .boton:hover {
-    background: #06636d;
+    background-color: #a91e1e;
 }
 
-.volver {
-    color: #087e8b;
+.modulos {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.modulos h2,
+.nosotros h2 {
+    color: #153b66;
+    margin-bottom: 30px;
+}
+
+.contenedor-modulos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: white;
+    width: 320px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 {
+    color: #153b66;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.boton-modulo {
+    display: inline-block;
+    background-color: #153b66;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
-#mensaje {
-    color: #b91c1c;
-    font-size: 14px;
+.nosotros {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e5ebf2;
+}
+
+.nosotros p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+footer {
+    background-color: #153b66;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .encabezado {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .bienvenida h2 {
+        font-size: 28px;
+    }
 }

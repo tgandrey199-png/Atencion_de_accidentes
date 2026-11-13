@@ -1,0 +1,76 @@
+
+@import './global.css';
+
+.login {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #102a43, #087e8b);
+}
+
+.login__contenido {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 38px;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+
+.login__contenido h1 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.login__contenido > p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login__icono {
+    text-align: center;
+    font-size: 55px;
+}
+
+.login label {
+    display: block;
+    margin: 18px 0 8px;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.login input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--borde);
+    border-radius: 7px;
+}
+
+.login input:focus {
+    border-color: var(--turquesa);
+    outline: none;
+}
+
+.login .boton {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.volver {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#mensaje {
+    color: var(--rojo);
+    text-align: center;
+    margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+    .login__contenido {
+        padding: 25px 20px;
+    }
+}
